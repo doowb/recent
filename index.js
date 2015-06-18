@@ -9,6 +9,19 @@
 
 var get = require('get-value');
 
+/**
+ * Return the most recent items on an object.
+ *
+ * ```
+ * var top10 = recent(posts);
+ * ```
+ *
+ * @param  {Object} `views` Object hash of items.
+ * @param  {Object} `options` Options to determine limit and property to sort on.
+ * @return {Object} Object of most recent items.
+ * @api public
+ */
+
 function recent(views, options) {
   options = options || {};
   var prop = options.prop || 'data.date';
@@ -40,6 +53,15 @@ function recent(views, options) {
   }
   return acc;
 }
+
+/**
+ * Get the date from a specified property or key.
+ *
+ * @param  {String} `key` Key used as the fallback when the property is not on the value.
+ * @param  {Object} `value` Object to use when finding the property.
+ * @param  {String} `prop` Property string to use to get the date.
+ * @return {String} Date string in the format `YYYYMMDD` (e.g. 20150618)
+ */
 
 function createdDate(key, value, prop) {
   var val = prop ? get(value, prop) : value;

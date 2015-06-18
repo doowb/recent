@@ -18,6 +18,27 @@ var recent = require('recent');
 
 <!-- add a path or glob pattern for files with code comments to use for docs  -->
 
+### [recent](index.js#L25)
+
+Return the most recent items on an object.
+
+**Params**
+
+* `views` **{Object}**: Object hash of items.
+* `options` **{Object}**: Options to determine limit and property to sort on.
+* `returns` **{Object}**: Object of most recent items.
+
+**Example**
+
+```
+var top10 = recent(posts);
+```
+
+### Options
+
+* `limit`: determines the number of items to return
+* `prop`: the property to sort on. by default either the key is used, or the `data.date` property if it exists on the object.
+
 ## Related projects
 
 <!-- add an array of related projects, then un-escape the helper -->
