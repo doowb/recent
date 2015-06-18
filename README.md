@@ -1,11 +1,11 @@
-# recent [![NPM version](https://badge.fury.io/js/recent.svg)](http://badge.fury.io/js/recent)  [![Build Status](https://travis-ci.org/doowb/recent.svg)](https://travis-ci.org/doowb/recent) 
+# recent [![NPM version](https://badge.fury.io/js/recent.svg)](http://badge.fury.io/js/recent)  [![Build Status](https://travis-ci.org/doowb/recent.svg)](https://travis-ci.org/doowb/recent)
 
 > Filter an object to return the most recent values.
 
-## Install with [npm](npmjs.org)
+Install with [npm](https://www.npmjs.com/)
 
-```bash
-npm i recent --save
+```sh
+$ npm i recent --save
 ```
 
 ## Usage
@@ -15,35 +15,40 @@ var recent = require('recent');
 ```
 
 ## API
+
 <!-- add a path or glob pattern for files with code comments to use for docs  -->
-{%= apidocs("index.js") %}
 
 ## Related projects
+
 <!-- add an array of related projects, then un-escape the helper -->
-{%= related([]) %}  
+
+* [assemble](http://assemble.io): Static site generator for Grunt.js, Yeoman and Node.js. Used by Zurb Foundation, Zurb Ink, H5BP/Effeckt,… [more](http://assemble.io)
+* [template](https://github.com/jonschlinkert/template): Render templates using any engine. Supports, layouts, pages, partials and custom template types. Use template… [more](https://github.com/jonschlinkert/template)
+* [verb](https://github.com/assemble/verb): Documentation generator for GitHub projects. Extremely powerful, easy to use, can generate anything from API… [more](https://github.com/assemble/verb)
 
 ## Running tests
-Install dev dependencies.
 
-```bash
-npm i -d && npm test
+Install dev dependencies:
+
+```sh
+$ npm i -d && npm test
 ```
 
-
 ## Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/recent/issues)
 
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/recent/issues/new)
 
 ## Author
 
 **Brian Woodward**
- 
+
 + [github/doowb](https://github.com/doowb)
-+ [twitter/doowb](http://twitter.com/doowb) 
++ [twitter/doowb](http://twitter.com/doowb)
 
 ## License
+
 Copyright © 2015 Brian Woodward
-Released under the MIT license
+Released under the MIT license.
 
 ***
 

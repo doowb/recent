@@ -15,7 +15,6 @@ function recent(views, options) {
   var limit = options.limit || 10;
 
   var res = {};
-  var keys = [];
 
   for (var key in views) {
     if (views.hasOwnProperty(key)) {
@@ -25,7 +24,7 @@ function recent(views, options) {
     }
   }
 
-  keys = Object.keys(res).sort();
+  var keys = Object.keys(res).sort();
   var len = keys.length;
   var num = 0;
   var acc = {};
@@ -49,7 +48,7 @@ function createdDate(key, value, prop) {
   var re = /^(\d{4})-(\d{2})-(\d{2})/;
   var m = re.exec(str);
   if (!m) return null;
-  return String(m[1]) + String(m[2]) + String(m[3])
+  return String(m[1]) + String(m[2]) + String(m[3]);
 }
 
 /**
